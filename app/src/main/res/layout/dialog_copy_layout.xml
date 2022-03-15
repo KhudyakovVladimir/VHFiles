@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="Copying..."
+            android:layout_width="250dp"
+            android:layout_height="72dp"
+            android:id="@+id/textViewDialogCopy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:textSize="30dp"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarHorizontalDialogCopy"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarDialogCopy"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="139dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarHorizontalDialogCopy"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDialogCopyFile" />
+
+    <TextView
+            android:id="@+id/textViewDialogCopyFile"
+            android:layout_width="347dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:text="Please wait"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarDialogCopy"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

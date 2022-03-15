@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/back"
+            android:icon="@drawable/back"
+            android:title="@string/back"
+            app:showAsAction="always">
+    </item>
+    <item
+            android:id="@+id/empty1"
+            android:title=""
+            app:showAsAction="always">
+    </item>
+    <item
+            android:id="@+id/about"
+            android:title=""
+            android:icon="@drawable/about"
+            app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/copy"
+        android:title="@string/copy"
+        app:showAsAction="always"
+        android:icon="@drawable/copy">
+    </item>
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/delete"
+        android:title="@string/delete"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/remove"
+        android:icon="@drawable/remove"
+        android:title="@string/remove"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/rename"
+        android:icon="@drawable/rename"
+        android:title="@string/rename"
+        app:showAsAction="always">
+    </item>
+
+</menu>

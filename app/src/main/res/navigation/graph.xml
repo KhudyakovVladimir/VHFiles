@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/graph"
+            app:startDestination="@id/permissionsFragment">
+
+    <fragment android:id="@+id/listFragment"
+              android:name="com.khudyakovvladimir.vhfileexplorer.fragments.FileListFragment"
+              android:label="ListFragment">
+        <action android:id="@+id/action_listFragment_to_explorerDialogFragment"
+                app:destination="@id/dialogFolderName"/>
+        <action android:id="@+id/action_listFragment_to_dialogFileName" app:destination="@id/dialogFileName"/>
+        <action android:id="@+id/action_listFragment_to_dialogCopy" app:destination="@id/dialogCopy"/>
+        <action android:id="@+id/action_listFragment_to_fileListGridFragment"
+                app:destination="@id/fileListGridFragment"/>
+        <action android:id="@+id/action_listFragment_to_dialogAbout" app:destination="@id/dialogAbout"/>
+    </fragment>
+    <fragment android:id="@+id/permissionsFragment"
+              android:name="com.khudyakovvladimir.vhfileexplorer.fragments.PermissionsFragment"
+              android:label="PermissionsFragment">
+        <action android:id="@+id/action_permissionsFragment_to_listFragment" app:destination="@id/listFragment"/>
+    </fragment>
+    <dialog android:id="@+id/dialogFolderName"
+            android:name="com.khudyakovvladimir.vhfileexplorer.fragments.DialogFolderName"
+            android:label="ExplorerDialogFragment"/>
+    <dialog android:id="@+id/dialogFileName"
+            android:name="com.khudyakovvladimir.vhfileexplorer.fragments.DialogFileName"
+            android:label="DialogFileName"/>
+    <dialog android:id="@+id/dialogCopy" android:name="com.khudyakovvladimir.vhfileexplorer.fragments.DialogCopy"
+            android:label="DialogCopy"/>
+    <fragment android:id="@+id/fileListGridFragment"
+              android:name="com.khudyakovvladimir.vhfileexplorer.fragments.FileListGridFragment"
+              android:label="FileListGridFragment"/>
+    <dialog android:id="@+id/dialogAbout" android:name="com.khudyakovvladimir.vhfileexplorer.fragments.DialogAbout"
+            android:label="DialogAbout"/>
+</navigation>
